@@ -9,7 +9,7 @@ import {DigitransitService} from '../services/digitransit.service';
 })
 export class MapComponent implements OnInit {
 
-    title = 'This is the map component';
+    title = 'Route position on map:';
 
   constructor(public digitransitService: DigitransitService) {
 
