@@ -12,6 +12,7 @@ import {DigitransitService} from './services/digitransit.service';
 import {HttpClientModule} from '@angular/common/http';
 import { MapComponent } from './map/map.component';
 import { AgmCoreModule } from '@agm/core';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { AgmCoreModule } from '@agm/core';
       HttpClientModule,
       FormsModule,
       BrowserModule,
+      FlexLayoutModule,
       AgmCoreModule.forRoot({apiKey: 'AIzaSyAbos3jG3-NcWSROdboxsgV-ugEEyk_nLM'})
   ],
   providers: [DigitransitService],

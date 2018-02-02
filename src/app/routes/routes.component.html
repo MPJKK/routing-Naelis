@@ -3,13 +3,16 @@
 <!--<input [(ngModel)]="pysakki">-->
 <!--<button (click)="searchFor()">Search</button>-->
 
-
+<div class="container" style="display: flex; flex-direction: row;">
+<ul>
 <h4>
     {{pysakki}}
 </h4>
 <p>{{message}}</p>
+</ul>
 <ul>
-    <li *ngFor="let stop of stopdata;">
+    <li *ngFor="let stop of stopdata;" style="list-style: none; margin-bottom: 0.3em;" class="mat-list-item">
         <a [routerLink]="['/map']">{{ stop.name }}, {{ stop.route.shortName }}, {{ stop.route.longName }}</a>
     </li>
 </ul>
+</div>
