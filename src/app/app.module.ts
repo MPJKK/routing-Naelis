@@ -13,6 +13,12 @@ import {HttpClientModule} from '@angular/common/http';
 import { MapComponent } from './map/map.component';
 import { AgmCoreModule } from '@agm/core';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+import { RegisterComponent } from './register/register.component';
+import { FrontComponent } from './front/front.component';
+import {MediaService} from './services/media.service';
+import { UploadComponent } from './upload/upload.component';
 
 
 @NgModule({
@@ -21,7 +27,12 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     TopBarComponent,
     SetupComponent,
     RoutesComponent,
-    MapComponent
+    MapComponent,
+    LoginComponent,
+    LogoutComponent,
+    RegisterComponent,
+    FrontComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +44,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
       FlexLayoutModule,
       AgmCoreModule.forRoot({apiKey: 'AIzaSyAbos3jG3-NcWSROdboxsgV-ugEEyk_nLM'})
   ],
-  providers: [DigitransitService],
+  providers: [DigitransitService, MediaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
