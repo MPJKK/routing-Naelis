@@ -25,6 +25,11 @@ export class UploadComponent implements OnInit {
         console.log(this.file.description);
         console.log(this.file.title, evt.target.files[0], evt.target.files[0].name);
 
+
+    }
+
+    upload() {
+//        this.formData.append();
     }
 
     ngOnInit() {
