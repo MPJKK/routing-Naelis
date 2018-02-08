@@ -1,4 +1,4 @@
-# Routing - Angular tehtävä 5 & 6, Anu Kakko
+# Routing - Angular tehtävä 5 (ja 6), Anu Kakko
 
 + Google Mapsin Angular-versiolla
 + Ulkoasu muokattu tehtävä 6 mukaisesti 
